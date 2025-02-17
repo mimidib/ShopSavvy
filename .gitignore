@@ -1,0 +1,33 @@
+# .gitignore
+.env
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build directories
+/bin/
+/obj/
+/out/
+
+# Go specific
+/vendor/
+
+# IDE and editor specific
+.vscode/
+.idea/
+*.swp
+*~
+.project
+.classpath
+.cproject
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

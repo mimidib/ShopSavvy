@@ -1,28 +1,29 @@
 # My Go Project
 
-This is a simple Go application that demonstrates how to create a basic "Hello, World!" program.
-
-## Project Structure
-
-```
-my-go-project
-├── cmd
-│   └── main.go       # Entry point of the application
-├── pkg
-│   └── hello
-│       └── hello.go  # Contains the SayHello function
-└── README.md         # Project documentation
-```
+This project is a Go application that scrapes product prices from specified websites and sends email notifications if the price is lower than a specified threshold.
 
 ## Getting Started
 
 To run this application, you need to have Go installed on your machine. You can download it from [the official Go website](https://golang.org/dl/).
 
+Create a .env file in the project directory with the following content:
+```
+EMAIL_FROM=your_email@gmail.com
+EMAIL_PASSWORD=your_app_specific_password
+EMAIL_TO=recipient_email@example.com
+```
+Install the required Go packages:  
+```
+go get -u github.com/gocolly/colly/v2
+go get github.com/joho/godotenv
+```
+
+
 ### Running the Application
 
 1. Clone the repository or download the project files.
 2. Navigate to the project directory:
-   ```
+   ```sh
    cd my-go-project
    ```
 3. Run the application using the following command:

@@ -1,5 +1,4 @@
-# My Go Project
-
+# ShopSavvy
 This project is a Go application that scrapes product prices from specified websites and sends email notifications if the price is lower than a specified threshold.
 
 ## Getting Started
@@ -34,3 +33,4 @@ go get github.com/joho/godotenv
 ### Purpose
 
 This project serves as a basic introduction to Go programming, showcasing how to structure a Go application with separate packages and an entry point. The application simply prints "Hello, World!" to the console.
+
